@@ -30,3 +30,18 @@
 
 	Windows:
 		safe_kill.bat
+
+## Q&A
+========
+
+* UID 是啥  
+  用来区分服务器组
+
+* cid 是啥  
+  用来区分服务进程
+
+* gus 是啥  
+  给生成唯一id用的，详情请查看 `KBEngine.genUUID64`
+
+* 是否可以不参与负载均衡？  
+  有，详情请查看 `KBEngine.setAppFlags`

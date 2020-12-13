@@ -58,8 +58,13 @@
 		
 		<databaseInterfaces>
 			<default>
-				<!-- <host> localhost </host> -->
-				<!-- <databaseName> kbe </databaseName> -->
+				<host> 127.0.0.1 </host>
+				<port> 3306 </port>
+				<auth>
+					<username>root</username>
+					<password>123456</password>
+				</auth>
+				<databaseName> kbe_casino </databaseName>
 			</default>
 		</databaseInterfaces>
 	</dbmgr>
