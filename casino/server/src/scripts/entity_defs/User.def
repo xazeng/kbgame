@@ -1,0 +1,38 @@
+<root>
+	<Properties>
+		<uid>
+			<Type>			UINT32			</Type>
+			<Flags>			ALL_CLIENTS		</Flags>
+			<Default>		0			</Default>
+			<Persistent>		true			</Persistent>
+		</uid>
+		<name>
+			<Type>			UNICODE		</Type>
+			<Flags>			ALL_CLIENTS	</Flags>
+			<Persistent>	true		</Persistent>
+			<DatabaseLength> 32			</DatabaseLength>
+		</name>
+		<coin>
+			<Type>			UINT64		</Type>
+			<Flags>			ALL_CLIENTS	</Flags>
+			<Default>		100			</Default>
+			<Persistent>	true		</Persistent>
+		</coin>
+	</Properties>
+
+	<ClientMethods>
+	</ClientMethods>
+
+	<BaseMethods>
+		<enterLobby>
+			<Arg> UINT32 </Arg>
+		</enterLobby>
+	</BaseMethods>
+
+	<CellMethods>
+		<enterRoom>
+			<Arg> UINT32 </Arg>
+		</enterRoom>
+	</CellMethods>
+
+</root>

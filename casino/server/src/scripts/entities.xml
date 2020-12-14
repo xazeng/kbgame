@@ -7,4 +7,7 @@
 
 	<!-- <Avatar/> -->
 	<Account hasClient="true"></Account><!-- <Account hasCell="true" hasBase="true" hasClient="true"></Account> -->
+	<User hasClient="true"></User>
+	<Lobby hasClient="true"></Lobby>
+	<Room hasClient="true"></Room>
 </root>

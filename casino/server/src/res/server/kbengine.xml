@@ -30,6 +30,10 @@
 	<!-- defined => kbe/res/server/kbengine_defs.xml -->
 	<dbmgr>
 		<account_system>
+			<!-- 账号Entity的名称
+			    (Name of AccountEntity)
+			 -->
+			<accountEntityScriptType> User </accountEntityScriptType>
 			<!-- 账号找回密码相关
 				(Account reset password)
 			-->
