@@ -39,3 +39,6 @@ class User(KBEngine.Proxy):
 		"""
 		DEBUG_MSG("Account[%i].onClientDeath:" % self.id)
 		self.destroy()
+
+	def enterLobby(self, gameId):
+		pass

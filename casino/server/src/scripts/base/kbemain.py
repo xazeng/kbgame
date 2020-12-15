@@ -13,6 +13,11 @@ def onBaseAppReady(isBootstrap):
 	INFO_MSG('onBaseAppReady: isBootstrap=%s, appID=%s, bootstrapGroupIndex=%s, bootstrapGlobalIndex=%s' % \
 	 (isBootstrap, os.getenv("KBE_COMPONENTID"), os.getenv("KBE_BOOTIDX_GROUP"), os.getenv("KBE_BOOTIDX_GLOBAL")))
 
+	# 读取配置，创建各游戏的lobby
+	if isBootstrap:
+		INFO_MSG("create entity locall")
+		KBEngine.createEntityLocally("Lobby", {"gameId":10001})
+
 def onReadyForLogin(isBootstrap):
 	"""
 	KBEngine method.
