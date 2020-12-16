@@ -13,10 +13,12 @@ def onBaseAppReady(isBootstrap):
 	INFO_MSG('onBaseAppReady: isBootstrap=%s, appID=%s, bootstrapGroupIndex=%s, bootstrapGlobalIndex=%s' % \
 	 (isBootstrap, os.getenv("KBE_COMPONENTID"), os.getenv("KBE_BOOTIDX_GROUP"), os.getenv("KBE_BOOTIDX_GLOBAL")))
 
-	# 读取配置，创建各游戏的lobby
 	if isBootstrap:
-		INFO_MSG("create entity locall")
-		KBEngine.createEntityLocally("Lobby", {"gameId":10001})
+		KBEngine.globalData["lobbys"] = {} #todo: 确认下 globalData 的同步机制，会不会出现其他base未同步到就已经开始赋值了？
+
+		# 读取配置，创建各游戏的lobby
+		# todo: 这里返回值是 None， 这里有问题
+		KBEngine.globalData["lobbys"][10001] = KBEngine.createEntityAnywhere("Lobby", {"gameId":10001})
 
 def onReadyForLogin(isBootstrap):
 	"""

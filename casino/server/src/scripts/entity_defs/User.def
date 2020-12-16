@@ -27,12 +27,12 @@
 		<enterLobby>
 			<Arg> UINT32 </Arg>
 		</enterLobby>
-	</BaseMethods>
-
-	<CellMethods>
 		<enterRoom>
 			<Arg> UINT32 </Arg>
 		</enterRoom>
+	</BaseMethods>
+
+	<CellMethods>
 	</CellMethods>
 
 </root>

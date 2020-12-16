@@ -1,5 +1,15 @@
 <root>
 	<Properties>
+		<gameId>
+			<Type>			UINT32			</Type>
+			<Flags>			ALL_CLIENTS		</Flags>
+			<Default>		0			</Default>
+		</gameId>
+		<roomId>
+			<Type>			UINT32			</Type>
+			<Flags>			ALL_CLIENTS		</Flags>
+			<Default>		0			</Default>
+		</roomId>
 	</Properties>
 
 	<ClientMethods>

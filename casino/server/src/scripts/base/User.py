@@ -42,3 +42,5 @@ class User(KBEngine.Proxy):
 
 	def enterLobby(self, gameId):
 		pass
+	def enterRoom(self, roomId):
+		pass
