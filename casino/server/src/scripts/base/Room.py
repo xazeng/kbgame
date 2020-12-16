@@ -8,5 +8,4 @@ class Room(KBEngine.Space):
 		self.gameId = self.cellData["gameId"]
 		self.roomId = self.cellData["roomId"]
 		INFO_MSG("create room base: gameId = %d, roomId = %d" % (self.gameId, self.roomId))
-		print(KBEngine.globalData["lobbys"])
 
